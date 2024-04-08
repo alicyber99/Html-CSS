@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.top{
+    width: 100%;
+    height: 60%;
+    /* background-color: red; */
+    background:url(image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    position: relative;
+    width: 100%;
+    height: 100% ;
+    background-color: rgba(0,0,0,0);
+}
+.text{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* height: 120px; */
+    /* background-color: red; */
+    padding: 0 10vw;
+    bottom: 20%;
+    color: white;
+}
+.text h1{
+    font-weight: 500;
+    font-size: 6vw;
+    cursor: pointer;
+}
+.text-right{
+    /* font-size: 1vw; */
+    /* text-align: center; */
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.text-right p{
+    padding: 2vw 2.5vw;
+    font-size: 0.8vw;
+    width: 40%;
+}
+/* .icons{
+    width:100%;
+    height: 100%;
+    font-size: 1.3vw;
+    /* display: flex; */
+    
+/* } */
+.icon-2 i{
+    color: white;
+    margin-top: 2.5vw;
+    cursor: pointer;
+}    
+.bottom{
+    width: 100%;
+    height: 40%;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bone{
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+.bone h4{
+    color: Black;
+    padding:2vw;
+}
+.bone p{
+    color: rgb(94, 93, 93);
+}
+.btwo{
+    width: 25%;
+    height: 100%;
+    background-image: url(image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bthree{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+.bthree-top{
+    width: 100%;
+    height: 50%;
+    background-color: orangered;
+    padding-left: 2vw;
+}
+.bthree-top h4{
+    color: white;
+    font-size: 1.2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.bthree-top p{
+    font-weight: 300;
+    font-size: 1vw;
+    color: bisque;
+}
+.bthree-bottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(image2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bfour{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+.bfour h3{
+    color: rgb(166, 166, 166);
+    padding: 3vw;
+    font-weight: 400;
+}
+.not{
+    height: 20%;
+    width: 100%;
+    color: rgb(166, 166, 166);
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.not div{
+    border-radius: 50%;
+    height: 86%;
+    width: 14%;
+    background-image: url(image3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 3vw;
+}
+.not p{
+    font-size: 1.2vw;
+    padding-left: 2vw;
+    font-weight: 500;
+    color: rgb(94, 93, 93);
+}
+.notfi{
+    height: 20%;
+    width: 100%;
+    color: rgb(166,166,166);
+    /* background-color: red; */
+    display: flex;
+    margin-top: 2vw;
+    flex-wrap: wrap;
+}
+.notfi div{
+    border-radius: 50%;
+    height: 86%;
+    width: 14%;
+    background-image: url(image4.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 3vw;
+}
+.notfi p{
+    font-size: 1.2vw;
+    padding-left: 2vw;
+    font-weight: 500;
+    color: rgb(94, 93, 93);
+}
+
+@media (max-width: 500px) {
+    .main{
+        width: 100%;
+        height: 180vh;
+    }
+    .top{
+        width: 100%;
+        height: 50vh;
+        
+    }
+    .overlay{
+        width: 100%;
+        height: 100% ;
+    }
+    .text{
+        flex-direction: column;
+        width: 100%; 
+    } 
+    .text h1{
+        padding-bottom: 5vw;
+        font-size: 15vw;
+    }
+    .text-right{
+        width: 60%;
+        flex-direction: column;
+    }
+    .text-right p{
+        padding: 2vw 2.5vw;
+        font-size: 2vw;
+        width: 70%;
+        margin-top: 3vw;
+    }
+     .icon-2 i{
+        font-size: 2.2vw;
+        margin-top: 4vw;
+        margin-left: 3vw;
+    }
+    .bottom{ 
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+    }
+    .bone{ 
+        height: 10vh;
+        width: 100%;
+    }
+    .bone h4{
+        color: Black;
+        margin-right: 2vw;
+        margin-top: 3vw;
+    }
+    .bone p{
+        color: rgb(94, 93, 93);
+        font-size: 2.5vw;
+    } 
+    .btwo{
+        width: 100%;
+        height: 25vh;   
+    }
+    .bthree{
+        width: 100%;
+        height: 30vh;
+    }
+    .bthree-top{
+        width: 100%;  
+        height: 8vh; 
+        /* background-color: orangered; */
+        /* padding-left: 2vw; */ 
+    }
+    .bthree-top h4{
+        color: white;
+        font-size: 5vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-left: 4vw;
+    } 
+    .bthree-top p{
+        font-weight: 300;
+        font-size: 1.5vw;
+        padding-left: 4vw;
+    }
+    .bthree-bottom{
+        width: 100%;
+        height: 30vh;
+    } 
+    .bfour{
+        width: 100%;    
+        height: 25vh;
+        background-color: black;
+        color: white; 
+    }
+    .bfour h3{
+        color: rgb(166, 166, 166);
+        padding: 3vw;
+        font-weight: 400;
+    }
+    .not{
+        height: 20%;
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .not div{
+        border-radius: 50%;
+        height: 86%;
+        width: 10%;
+        margin-left: 6vw;
+    }
+    .not p{
+        font-size: 3vw;
+        margin-top: 2vw;
+        margin-left: 1.5vw;
+    }
+    .notfi{
+        height: 20%;
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .notfi div{
+        border-radius: 50%;
+        height: 86%;
+        width: 10%;
+        margin-left: 6vw;
+    }
+    .notfi p{
+        font-size: 3vw;
+        margin-top: 3vw;
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
